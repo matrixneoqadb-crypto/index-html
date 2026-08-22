@@ -11,7 +11,8 @@ https://matrixneoqadb-crypto.github.io/joeanns-hypoia-/
 **Live site**: https://matrixneoqadb-crypto.github.io/joeanns-hypoia-/
 
 ### The Problem
-Tumors, pathogens, and bioreactors all exhibit fermentation-like metabolism. Current diagnostics measure *that* it happens. They cannot prove *why*. Is it glucose-driven overflow or oxygen-starved survival? Guessing wrong means failed therapies.
+Tumors, pathogens, and bioreactors all exhibit fermentation-like metabolism. Current diagnostics measure *that* it
+ happens. They cannot prove *why*. Is it glucose-driven overflow or oxygen-starved survival? Guessing wrong means failed therapies.
 
 ### The Solution: Two Axes. One Answer.
 1. **Axis 1: Overflow Test** — Hold O₂ stable at 21%. Titrate glucose 0–25 mM. Tests if fermentation is glucose-driven under normoxia.
@@ -70,4 +71,4 @@ Each node handles a sector of logic/governance. Complete coverage. No blind spot
 2. **Astronomy**: Stonehenge × HD 173688 coordinate analysis 
 3. **Cancer Research**: MB16 Mathematical Engine for biomarker ranking
 
-## Governance Flow
+## Governance Flowhttps://matrixneoqadb-crypto.github.io/joeanns-hypoia-/
