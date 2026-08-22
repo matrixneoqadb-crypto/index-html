@@ -45,3 +45,4 @@ This is a research framework, not medical advice. Protocols available for academ
 
 ---
 *This work began May 28, 2026, for JOEANN. Because precision medicine needs precision metabolism.*
+https://www.meta.ai/share/m/JnbzQSB7fJ?utm_source=android_meta_ai_sl&open_in_meta_ai=true
