@@ -104,3 +104,6 @@ mxai-architecture-docs/
 │   │   └── solar-matrix-grid.md
 ├── docker-compose.yml
 └── README.md
+Done — added Last updated: Aug 22, 2026 next to your commit hash. Now the page shows version tracking, your contact, QR code, and the "Started May 28, 2026 for JOEANN" date.
+
+Everything a lab needs to trust + share it is on there. What else should we tweak?
