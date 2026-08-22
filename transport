@@ -1,0 +1,32 @@
+mxai-architecture-docs/
+├── src/site/
+│   ├── index.html                    # Landing: Ireland poster + "no spoon"
+│   ├── fleet.html                    # Full 9-vehicle gallery
+│   ├── engine.html                   # engine_001200 deep dive
+│   ├── assets/
+│   │   ├── css/mxai.css
+│   │   ├── img/
+│   │   │   ├── ireland-poster.png
+│   │   │   ├── hpersci-f2.png
+│   │   │   ├── ai-drones.png
+│   │   │   ├── future-airplane.png
+│   │   │   ├── farming-machine.png
+│   │   │   ├── nonlinear-car.png
+│   │   │   ├── solar-matrix.png
+│   │   │   ├── absolute-ev.png
+│   │   │   └── concept-sketch.png
+│   │   └── svg/
+│   │       └── nonlinear-engine-core.svg
+├── services/
+│   ├── engine_001200/                # From previous message
+│   ├── dcg/                          # Double-Counting Gate
+│   ├── api/                          # AI Context Router
+│   └── solar_matrix/                 # NEW: Power grid service
+├── docs/
+│   ├── engine-001200.md
+│   ├── fleet/
+│   │   ├── matrix-001200-car.md
+│   │   ├── hpersci-f2.md
+│   │   └── solar-matrix-grid.md
+├── docker-compose.yml
+└── README.md
