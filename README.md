@@ -71,3 +71,55 @@ Each node handles a sector of logic/governance. Complete coverage. No blind spot
 3. **Cancer Research**: MB16 Mathematical Engine for biomarker ranking
 
 ## Governance Flow
+      - name: Upload CSV to Google Cloud Storage for Looker Studio
+        if: vars.GCP_BUCKET != ''
+        uses: google-github-actions/upload-cloud-storage@v2
+        with:
+          path: matrix_monthly_rollup.csv
+          destination: ${{ vars.GCP_BUCKET }}/matrix-verified-value/
+          parent: false
+          process_gcloudignore: false
+        env:
+          GCP_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Upload CSV to S3 for Grafana/Athena
+        if: vars.AWS_S3_BUCKET != ''
+        uses: jakejarvis/s3-sync-action@master
+        with:
+          args: --acl public-read
+        env:
+          AWS_S3_BUCKET: ${{ vars.AWS_S3_BUCKET }}/matrix-verified-value
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SOURCE_DIR: '.'
+          DEST_DIR: ''
+        # Only sync the rollup CSV
+        run: |
+          echo "matrix_monthly_rollup.csv" > include.txt
+          
+      - name: Append to BigQuery for Looker Studio
+        if: vars.BQ_DATASET != ''
+        uses: google-github-actions/load-data-to-bigquery@v2
+        with:
+          source: matrix_monthly_rollup.csv
+          destination_table: ${{ vars.BQ_PROJECT }}.${{ vars.BQ_DATASET }}.matrix_monthly_rollup
+          write_disposition: WRITE_APPEND
+          skip_leading_rows: 1
+        env:
+          GCP_CREDENTIALS: ${{ secrets.GCP_SA_KEY }}
+
+      - name: Post Dashboard Links to Slack + Email
+        id: dashboard
+        run: |
+          LOOKER="https://lookerstudio.google.com/reporting/${{ vars.LOOKER_REPORT_ID }}"
+          GRAFANA="https://grafana.company.com/d/matrix-verified-value/matrix-verified-value-vs-github-spend"
+          
+          echo "looker_url=$LOOKER" >> $GITHUB_OUTPUT
+          echo "grafana_url=$GRAFANA" >> $GITHUB_OUTPUT
+          
+          # Append links to email HTML
+          cat >> finance_email.html << EOF
+          <h3>LIVE DASHBOARDS</h3>
+          <p><a href="$LOOKER">Looker Studio: MATRIX Verified Value</a> - auto-updates monthly</p>
+          <p><a href="$GRAFANA">Grafana: MATRIX vs GitHub Spend</a> - real-time HANK feed</p>
+          EOF
