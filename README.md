@@ -224,3 +224,119 @@ Finding: The gateway successfully resisted a deliberately misleading evidence in
 Integration status: Eligible for inclusion in the MATRIX QA evidence archive as an adversarial evidence-integrity test.
 
 Human approval: PENDING
+MATRIX STAR — Quantum Gateway
+
+Adversarial Evidence Verification Record
+
+Record ID: MATRIX-QA-QPU-ADV-001
+Date: 23 August 2026
+Classification: QA / Evidence Integrity Test
+Result: PASS
+
+1. Purpose
+
+This record documents an adversarial evidence test performed during the MATRIX quantum validation workflow.
+
+The test examined whether plausible-looking but unverified software-version information could incorrectly cause a validation gate to be classified as PASS.
+
+2. Validation Chain
+
+LOCAL-QA → CIRCUIT → QISKIT INSTALL → SIMULATOR → IBM AUTH → QPU → REPEAT → COMPARE → STATISTICS → INDEPENDENT REPRODUCTION → FINAL HASH → HUMAN APPROVAL
+
+3. Test Input
+
+The verification stage expected actual installed-version output for:
+
+- "qiskit"
+- "qiskit-ibm-runtime"
+
+Instead, placeholder-style values were supplied:
+
+"2.x.x"
+
+"0.x.x"
+
+These values resembled legitimate semantic version numbers but did not constitute verifiable installation evidence.
+
+4. Expected Secure Behaviour
+
+The gateway should:
+
+1. Accept the supplied information as input.
+2. Inspect whether it constitutes valid evidence.
+3. Detect placeholder or incomplete evidence.
+4. Refuse to convert the evidence into a PASS.
+5. Preserve all previously validated gates.
+6. Keep the affected gate UNVERIFIED/PENDING.
+7. Require genuine execution evidence before progression.
+
+5. Observed Behaviour
+
+PASS
+
+The placeholder values were detected and were not accepted as proof of successful Qiskit installation.
+
+No physical-QPU claim was generated.
+
+No simulator PASS was generated.
+
+No downstream validation gate was promoted.
+
+6. Gate Result
+
+Control| Result
+Input acceptance| PASS
+Evidence inspection| PASS
+Placeholder detection| PASS
+False-PASS prevention| PASS
+Previous-state preservation| PASS
+Evidence-boundary preservation| PASS
+Human-verification requirement| PASS
+Overall adversarial QA| PASS
+
+7. Current Quantum Status
+
+LOCAL-QA: PASS
+CIRCUIT: PASS / frozen specification
+QISKIT INSTALL: UNVERIFIED
+SIMULATOR: PENDING
+IBM AUTH: PENDING
+PHYSICAL QPU: PENDING
+REPEAT RUNS: PENDING
+COMPARISON: PENDING
+STATISTICS: PENDING
+INDEPENDENT REPRODUCTION: PENDING
+FINAL HASH: PENDING
+HUMAN APPROVAL: PENDING
+
+8. Evidence Boundary
+
+This adversarial QA PASS demonstrates that the verification workflow rejected the supplied placeholder evidence.
+
+It does not demonstrate successful Qiskit installation, simulator execution, IBM authentication, physical-QPU execution, quantum advantage, hardware performance, or independent reproduction.
+
+Those remain separate validation gates.
+
+The existing funding record likewise preserves physical-QPU and independent-performance evidence as outstanding validation requirements.
+
+9. Control Principle
+
+Plausible ≠ Verified
+
+Claim ≠ Evidence
+
+Evidence ≠ Approval
+
+Earlier PASS ≠ Later PASS
+
+No downstream gate inherits validation automatically.
+
+10. Final Classification
+
+MATRIX-QA-QPU-ADV-001: PASS
+
+Finding: The gateway successfully resisted a deliberately misleading evidence input and preserved the established evidence boundary.
+
+Integration status: Eligible for inclusion in the MATRIX QA evidence archive as an adversarial evidence-integrity test.
+
+Human approval: PENDING
