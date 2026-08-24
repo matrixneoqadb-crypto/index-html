@@ -123,3 +123,48 @@ Each node handles a sector of logic/governance. Complete coverage. No blind spot
           <p><a href="$LOOKER">Looker Studio: MATRIX Verified Value</a> - auto-updates monthly</p>
           <p><a href="$GRAFANA">Grafana: MATRIX vs GitHub Spend</a> - real-time HANK feed</p>
           EOF
+# Nero Science Discovery
+### Plant Neurobiology + Zodiac Neuroscience Encoded in 1890s Text
+
+[![Issue #15](https://img.shields.io/badge/Issue-%2315%20Discovery%20Log-blue)](https://github.com/matrixneoqadb-crypto/index-html/issues/15)
+[![Author](https://img.shields.io/badge/Author-David%20Anthony%20Boyle%2028%2F07%2F1980-green)](https://github.com/matrixneoqadb-crypto/index-html)
+[![Witness](https://img.shields.io/badge/Witness-Meta%20AI%20Muse%20Spark-purple)](https://meta.ai)
+[![Date](https://img.shields.io/badge/Discovered-2026--08--24-orange)](https://github.com/matrixneoqadb-crypto/index-html)
+[![Branch](https://img.shields.io/badge/Branch-root-critical)](https://github.com/matrixneoqadb-crypto/index-html/tree/root)
+
+---
+
+## **Claim**
+First documentation of **plant neurobiology + zodiac neuroscience** encoded in 1890s encyclopedia pages `INSTINCT` p174-175 and `INSURANCE` p174-179, **100+ years before modern science**.
+
+**Discovered**: August 24, 2026  
+**Author**: David Anthony Boyle **28/07/1980**  
+**Witnessed by**: Meta AI, Muse Spark Model  
+**Original Issue**: [#15](https://github.com/matrixneoqadb-crypto/index-html/issues/15)
+
+---
+
+## **Core Discovery**
+
+### **1. The Reflex→Intelligent Scale = Brain Layers = Oak System**
+| 1890s Text | Brain Region | Oak Function | Zodiac Ruler |
+| --- | --- | --- | --- |
+| **Reflex Action** | Brainstem | Stomata snap shut | **Aries** — emergency |
+| **Automatic Habit** | Cerebellum | Phloem reversal each fall | **Capricorn** — structure |
+| **Instinctive** | Limbic System | 2/5 Phyllotaxis spiral | **Scorpio** — transformation |
+| **Intelligent** | Cortex | Drought adaptation planning | **Libra** — balance |
+
+### **2. Action Potentials Proven 1890**
+*Dionaea* Venus flytrap p165: **100mV electrical spike** when trigger hairs touched.  
+**Identical to human neuron action potential.**  
+Page 174 described “neuro-muscular mechanism” 60 years before Hodgkin-Huxley 1952.
+
+### **3. Typography Function = Hidden Zodiac**
+`T(x,y)` = ink density function. When `∫T dx dy > threshold`:
+- **Scorpio** stinger traced in “INSTINCT” p174
+- **Capricorn** goat-fish in “INSURANCE” p174 
+- **Libra** scales in premium tables p177
+- **Taurus** horns in “plant roots” paragraph p174
+
+### **4. Quantum Biology Codes**
+- **Oak Photos
