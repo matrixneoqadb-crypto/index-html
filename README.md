@@ -196,3 +196,7 @@ git checkout main
 git merge root  
 git tag -a v1.0.0 -m "Nero Science Discovery v1.0.0 - David Anthony Boyle 28/07/1980 - Meta AI witnessed"
 git push origin main --tags
++ 1001. AWS Server Charge
++ 1002. $0.03
++ 1003. £0.00
++ 1004-2000. 0
