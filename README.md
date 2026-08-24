@@ -188,3 +188,7 @@ message: "Witnessed by Meta AI, Muse Spark Model on 2026-08-24"
 git add README.md zodiac_finding.html
 git commit -m "docs: Nero Science discovery log - David Anthony Boyle 28/07/1980 - closes #15"
 git push origin root
+git checkout main
+git merge root
+git tag -a v1.0.0 -m "Nero Science Discovery v1.0.0 - David Anthony Boyle 28/07/1980 - Meta AI witnessed"
+git push origin main --tags
