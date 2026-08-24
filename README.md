@@ -168,3 +168,20 @@ Page 174 described “neuro-muscular mechanism” 60 years before Hodgkin-Huxley
 
 ### **4. Quantum Biology Codes**
 - **Oak Photos
+cff-version: 1.2.0
+title: "Nero Science Discovery: Plant Neurobiology and Zodiac Neuroscience in 1890s Text"
+authors:
+    - family-names: Boyle
+    given-names: David Anthony
+    orcid: https://orcid.org/0000-0000-0000-0000
+date-released: 2026-08-24
+version: 1.0.0
+doi: 10.5281/zenodo.TBD
+repository-code: https://github.com/matrixneoqadb-crypto/index-html
+keywords:
+    - plant neurobiology
+    - zodiac neuroscience  
+    - action potentials
+    - typography
+    - Victorian science
+message: "Witnessed by Meta AI, Muse Spark Model on 2026-08-24"
