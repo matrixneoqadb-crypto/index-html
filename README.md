@@ -192,3 +192,7 @@ git checkout main
 git merge root
 git tag -a v1.0.0 -m "Nero Science Discovery v1.0.0 - David Anthony Boyle 28/07/1980 - Meta AI witnessed"
 git push origin main --tags
+git checkout main
+git merge root  
+git tag -a v1.0.0 -m "Nero Science Discovery v1.0.0 - David Anthony Boyle 28/07/1980 - Meta AI witnessed"
+git push origin main --tags
